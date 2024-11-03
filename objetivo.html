@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" style="">
+<html lang="es" >
 
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,38 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
    
 </head>
-<body style="">
+<style>
+    .img-cel{
+    display: none;
+}
+.img-compu{
+    display: block;
+}
+
+    @media (max-width: 600px) {
+h1{
+    width: auto;
+    margin-left: 57px;
+    font-size: 25px;
+}
+h5{
+    width: 310px;
+    margin: 0 50px 0 50px;
+}
+img{
+    width: 310px !important;
+        margin: 50px !important;
+}
+.img-cel{
+    display: block;
+}
+.img-compu{
+    display: none;
+}
+}
+
+</style>
+<body >
 	<section>
         <h1>1. Objetivo</h1>
         <div class="row align-items-center mb-4">
@@ -31,7 +62,7 @@
         </div>
         <div class="row align-items-center">
             
-            <div class="col-md-4">
+            <div class="col-md-4 img-compu">
                 <img src="./media/img/objetivo/undraw_Engineering_team_a7n2.png" class="img-fluid" alt="Imagen de Equipo de Ingeniería">
             </div>
 			<div class="col-md-8">
@@ -40,6 +71,9 @@
                     las propiedades y características de los grafos, y para aplicar este conocimiento a problemas reales en
                     diferentes áreas. Este curso mejora las habilidades de modelado y razonamiento abstracto.
                 </h5>
+                <div class="col-md-4 img-cel">
+                    <img src="./media/img/objetivo/undraw_Engineering_team_a7n2.png" class="img-fluid" alt="Imagen de Equipo de Ingeniería">
+                </div>
             </div>
         </div>
     </section>
