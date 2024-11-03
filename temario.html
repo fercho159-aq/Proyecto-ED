@@ -1,47 +1,130 @@
 <!DOCTYPE html>
-<html lang="es" style="">
+<html lang="es">
 
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="Author" content="Equipo 2"><!--Autor-->
-	<script src="media/js/jq.js" type="text/javascript"></script>
-	<script src="media/js/m.js" type="text/javascript"></script>
-	<script src="media/js/ui.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
-	<link rel="icon" href="media/img/icono.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="Author" content="Equipo 2">
+    <title>Temario</title>
+    <link rel="stylesheet" href="media/css/ui.css" type="text/css">
+    <link rel="icon" href="media/img/icono.png">
+    <style>
+   
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 20%;
+            font-size: 18px;
+        }
+
+        li {
+            margin: 10px 0;
+            position: relative;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #007BFF;
+        }
+
+        ul ul {
+            margin-left: 5%;
+            font-size: 16px;
+        }
+
+        ul ul li::before {
+            background: #6C757D;
+        }
+
+        /* Estilo para el enlace de los ejemplos */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
-<body style="">
+<body>
     <section>
-        <h1><br><br>Temario <br><br></h1>
-        <h2>1. Objetivo</2>
-        <h2>2. Introducción</h2>
-        <h2>3. Desarrollo</h2>
-        <h3>&emsp;&emsp;3.1 Probabilidad discreta</h3>
-        <h3>&emsp;&emsp;3.2 Probabilidad condicional</h3>
-        <h3>&emsp;&emsp;3.3 Independencia</h3>
-        <h3>&emsp;&emsp;3.4 Teorema de Bayes</h3>
-        <h2>4. Ejemplos</h2>
-        <h3>&emsp;&emsp;4.1 Probabilidad discreta</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.1.1 Ejemplo 1</h4>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.1.2 Ejemplo 2</h4>
-        <h3>&emsp;&emsp;4.2 Probabilidad condicional</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.2.1 Ejemplo 3</h4>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.2.2 Ejemplo 4</h4>
-        <h3>&emsp;&emsp;4.3 Independencia</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.3.1 Ejemplo 5</h4>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.3.2 Ejemplo 6</h4>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.3.3 Ejemplo 7</h4>
-        <h3>&emsp;&emsp;4.4 Teorema de Bayes</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.4.1 Ejemplo 8</h4>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.4.2 Ejemplo 9</h4>
-        <h4>&emsp;&emsp;&emsp;&emsp;4.4.3 Ejemplo 10</h4>
-        <h2>5. Video</h2>
-        <h2>6. Software Interactivo</h2>
-        <h2>7. Cuestionario</h2>
-        <h2>8. Conclusión</h2>
-        <h2>9. Bibliografía</h2>
+        <h1>Temario</h1>
+        <ul>
+            <li>1. Objetivo</li>
+            <li>2. Introducción</li>
+            <li>3. Desarrollo
+                <ul>
+                    <li>3.1 Grafos Simples y Propiedades
+                        <ul>
+                            <li>3.1.1 Definición y Propiedades de Grafos Simples</li>
+                            <li>3.1.2 Nodos adyacentes, aristas incidentes y grado de un nodo</li>
+                        </ul>
+                    </li>
+                    <li>3.2 Tipos de Grafos
+                        <ul>
+                            <li>3.2.1 Grafos dirigidos, lazos, aristas múltiples, y multigrafos</li>
+                            <li>3.2.2 Grafos especiales: completos, bipartitos y planos</li>
+                        </ul>
+                    </li>
+                    <li>3.3 Subgrafos
+                        <ul>
+                            <li>3.3.1 Definición y tipos de subgrafos</li>
+                        </ul>
+                    </li>
+                    <li>3.4 Propiedades de los Vértices y Aristas
+                        <ul>
+                            <li>3.4.1 Grado de los vértices</li>
+                            <li>3.4.2 Aristas de corte y vértices de corte</li>
+                        </ul>
+                    </li>
+                    <li>3.5 Isomorfismo de Grafos
+                        <ul>
+                            <li>3.5.1 Definición y aplicación</li>
+                        </ul>
+                    </li>
+                    <li>3.6 Rutas en Grafos
+                        <ul>
+                            <li>3.6.1 Tipos de rutas: cerrada, simple, vía, y circuito</li>
+                        </ul>
+                    </li>
+                    <li>3.7 Árboles y Bosques
+                        <ul>
+                            <li>3.7.1 Definición y propiedades de árboles</li>
+                            <li>3.7.2 Fórmula de Cayley para contar árboles</li>
+                        </ul>
+                    </li>
+                    <li>3.8 Propiedades Avanzadas de Grafos
+                        <ul>
+                            <li>3.8.1 Girth y Diámetro</li>
+                        </ul>
+                    </li>
+                    <li>3.9 Algoritmos de Búsqueda en Grafos
+                        <ul>
+                            <li>3.9.1 Búsqueda en Profundidad (DFS) y Búsqueda en Anchura (BFS)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>4. Ejemplos
+                <ul>
+                    <li>4.1 Problema del Conector y Algoritmo de Kruskal</li>
+                </ul>
+            </li>
+            <li>5. Video Explicativo</li>
+            <li>6. Software Interactivo</li>
+            <li>7. Cuestionario de Evaluación</li>
+            <li>8. Conclusión</li>
+            <li>9. Bibliografía</li>
+        </ul>
     </section>
 </body>
 
