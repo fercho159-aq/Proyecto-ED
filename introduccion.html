@@ -10,30 +10,57 @@
 	<script src="media/js/ui.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
 	<link rel="icon" href="media/img/icono.png">
+      <!-- Bootstrap CSS -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
+<style>
+ul.list-group.list-group-flush.mb-4 {
+    width: auto;
+    margin: 0 150px 20px  183px;
+}</style>
 <body style="">
     <section>
-		<br><br><br>
-        <h1>2. Introducción</h1>
-		<br>
-		<h5>A lo largo de la historia, la humanidad siempre ha debido soportar la incertidumbre acerca del clima, de su abastecimiento de alimentos y de otros 
-            aspectos de su medio ambiente, y ha tenido que esforzarse por reducir esta incertidumbre y sus efectos.
-            <br><br>
-            Hoy, la teoría de la probabilidad es una herramienta importante en la mayoría de las áreas de ingeniería, ciencias y administración. Muchos investigadores 
-            se dedican activamente al descubrimiento y puesta en práctica de nuevas aplicaciones de la probabilidad en campos como medicina, meteorología, 
-            fotografía desde nuevas naves espaciales, mercadotecnia, predicciones de terremotos, comportamiento humano, diseño de sistemas de computadores y derecho.
-            <br><br>
-            A menudo oímos y usamos expresiones tales como: “Probablemente lloverá mañana por la tarde”, “es muy probable que el avión llegue tarde”, o “hay muchas 
-            posibilidades de que pueda reunirse con nosotros para cenar esta noche ”. Cada una de estas expresiones está basada en el concepto de la probabilidad, o la 
-            verosimilitud, de la ocurrencia de algún suceso.
-            <br><br>
-            El concepto de probabilidad aparece ligado en sus orígenes a los juegos de azar, razón por la cual se tiene constancia del mismo desde tiempos remotos. 
-            En Probabilidad la pregunta se formula del siguiente modo: ¿qué posibilidad hay de que tenga lugar cada uno de los sucesos? La respuesta exige un tercer 
-            elemento que nos proporcione esa información: Una función de conjunto P, es decir, una función definida sobre la álgebra de conjuntos de sucesos, que a 
-            cada uno de ellos le asocia un valor numérico que expresa la mayor o menor probabilidad o posibilidad o certidumbre de producirse cuando se realiza el 
-            experimento. Esta función de conjunto se conoce como medida de probabilidad o simplemente probabilidad.
-		</h5>
-	    	<img src="media/img/intro.jpg" border="0" width="650" alt="">
+        <div class="container my-5">
+            <!-- Section Header -->
+            <div class="text-center mb-4">
+                <h1 class="display-5 fw-bold">Introducción a la Teoría de Grafos</h1>
+                <p class="text-muted">Explorando los conceptos básicos y definiciones fundamentales</p>
+            </div>
+            
+            <!-- Content Section -->
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4">
+                    <h2 class="h4 mb-3">¿Qué es la Teoría de Grafos?</h2>
+                    <p>La teoría de grafos es una rama de las matemáticas que se centra en el estudio de estructuras compuestas por <strong>nodos</strong> y las conexiones entre ellos, llamadas <strong>aristas</strong>. Los grafos son modelos versátiles y potentes que permiten representar y analizar diversos tipos de relaciones y problemas en múltiples disciplinas, desde la informática hasta la biología y las ciencias sociales.</p>
+                    
+                    <h2 class="h4 mb-3">Conceptos Básicos</h2>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><strong>Grafo simple:</strong> Un tipo de grafo sin direcciones en sus conexiones. Permite ir de un nodo a otro en ambas direcciones, como en el conjunto de nodos {a, b, c, d}.</li>
+                        <li class="list-group-item"><strong>Nodos adyacentes:</strong> Dos nodos son adyacentes si están conectados directamente por una arista.</li>
+                        <li class="list-group-item"><strong>Arista incidente:</strong> Una arista es incidente a un nodo si el nodo es uno de sus extremos.</li>
+                        <li class="list-group-item"><strong>Grado de un nodo:</strong> Es el número de aristas que inciden en un nodo.</li>
+                    </ul>
+                    
+                    <h2 class="h4 mb-3">Origen de la Teoría de Grafos</h2>
+                    <p>El origen de la teoría de grafos se remonta al problema de los puentes de <strong>Königsberg</strong>, planteado por el matemático suizo <strong>Leonhard Euler</strong> en 1735. Euler demostró que no existía un camino que permitiera cruzar cada uno de los siete puentes de la ciudad una sola vez y regresar al punto de partida, estableciendo los fundamentos de los <em>grafos eulerianos</em> y desarrollando las primeras nociones de la teoría de grafos.</p>
+                    
+                    <h2 class="h4 mb-3">Propiedades Importantes</h2>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><strong>Teorema de la suma de grados:</strong> La suma de los grados de todos los nodos en un grafo es igual al doble del número de aristas.</li>
+                        <li class="list-group-item"><strong>Número par de nodos con grado impar:</strong> En cualquier grafo, el número de nodos con un grado impar siempre es par.</li>
+                    </ul>
+    
+                    <h2 class="h4 mb-3">Aplicaciones de la Teoría de Grafos</h2>
+                    <p>Hoy en día, la teoría de grafos es una herramienta fundamental para modelar y resolver problemas, proporcionando una estructura útil para analizar redes, rutas y conexiones complejas en sistemas diversos.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
     </section>
 </body>
 
